@@ -1,5 +1,23 @@
  $(document).ready(function() {
 
+
+    /////////////////////////////////
+    window.onscroll = function() {
+        toggleNavbarClass();
+    };
+    
+    function toggleNavbarClass() {
+        var navbar = document.querySelector('.navbar');
+    
+        if (document.documentElement.scrollTop > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+    
+
+    
     $('.newformy').on('submit', function () {
 
         var nform = $(this);

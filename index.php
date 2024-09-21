@@ -37,7 +37,7 @@
     <!-- navbar end ====================================================================== -->
 
     <!-- carousel start ====================================================================== -->
-    <div id="carouselExample" class="carousel slide pt-5 mt-4">
+    <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container ">

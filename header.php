@@ -1,5 +1,5 @@
 <div class="overflow-hidden">
-<nav class="navbar navbar-expand-lg position-fixed top-0 w-100 zindex-99 shadow_white">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 zindex-99 shadow_white">
         <div class="container">
             <a href="<?= LINK; ?>">
                 <img class="logo bs_logo" src="images/img/logo.webp" alt="">
@@ -31,9 +31,6 @@
                 </ul>
                 <a href="#" class="btn btn_01 my-2 my-sm-0 ms-md-3" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">Download Brochure</a>
-                <a class="sil_gradient p-2 ms-2 text-center rounded" href="tel:+91 8718871891" target="_blank">
-                    <i class="fa fa-phone text-dark" aria-hidden="true"></i>
-                </a>
             </div>
         </div>
     </nav>

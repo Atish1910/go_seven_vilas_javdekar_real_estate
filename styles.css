@@ -185,9 +185,9 @@ h2,h5{
     background-size: cover;
 }
 .form_01{
-    position: absolute;
-    top: 50px;
-    right: 0;
+        position: absolute;
+        top: 7rem;
+        right: 0;    
 }
 .btn_01{
     color: white;
@@ -347,6 +347,7 @@ a:hover{
 
 .bs_logo {
     height: 50px;
+    filter: invert(1) brightness(30);
 }
 
 nav.navbar .nav-item a {
@@ -373,7 +374,7 @@ nav.navbar .nav-item a.active{
 }
 
 .shadow_white {
-    box-shadow: 0 0.2rem 0.5rem rgba(255, 255, 255, 0.175) !important;
+    border: 1px solid #e2e2e261;
 }
 
 .h_gallrey img {
@@ -605,6 +606,39 @@ img.demo {
 .h_04{
     height: 60px;
 }
+
+/* Styling when navbar has the 'scrolled' class */
+.navbar.scrolled {
+    background-color: #f4f1e8; /* Change to your desired background color */
+}
+
+.navbar.scrolled .logo {
+    filter: invert(0); /* Invert the image color */
+}
+
+.scrolled .nav-item a{
+    color: rgb(0, 0, 0) !important; /* Change nav item text color to white */
+}
+.scrolled .btn_01{
+    color: #000;
+    border: solid 1px #000;
+}
+
+@keyframes zoom-out {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 @media (min-width: 768px) {
     
 .carousel-inner img{
