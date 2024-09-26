@@ -1032,6 +1032,11 @@ img.demo {
     border-bottom: 1px solid;
 }
 
+.lower-form-part .newformy .form-control {
+    background: #292e2d !important;
+    padding: 9px !important;
+}
+
 .newformy button {
     border-radius: 0;
 }

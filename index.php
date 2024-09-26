@@ -102,28 +102,7 @@
                         <!-- <p class="sub_text">Your email address will not be published.</p> -->
                     </div>
                     <div class="form lower-form-part">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Name" name="name"
-                                id="qSenderName1" fdprocessedid="h6ga2h">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter Email" name="email"
-                                id="qEmailID1" fdprocessedid="5mc0od">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Number" name="number"
-                                id="qMobileNo1" fdprocessedid="2bznpw">
-                        </div>
-                        <div class="form-group">
-                            <input name="message" id="qMessage1" class="form-control" placeholder="Enter Message"
-                                fdprocessedid="rh59fe">
-                        </div>
-                        <button class="btn dark_btn rounded submit_btn" id="SubmitQuery1" fdprocessedid="j2405v">Submit
-                            Now</button>
-                        <p class="form_checkbox"><input type="checkbox" onclick="return false" checked=""> I authorize company representatives to
-                            Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any
-                            registration for
-                            DNC/NDNC.</p>
+                        <?php include 'form_01.php' ;?>
                     </div>
                 </div>
             </div>
