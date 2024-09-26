@@ -32,38 +32,100 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<body class="bg-lblack">
+<body class="bg-off_white">
     <?php include 'header.php';?>
     <!-- navbar end ====================================================================== -->
 
     <!-- carousel start ====================================================================== -->
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="container ">
-                    <div class="row position-relative">
-                        <div class="col-md-6"></div>
-                        <div class="col-md-6  form_01 d-none d-md-block  wow fadeInUp" data-wow-delay="0.15s">
-                            <div class="p-5 bg-dark">
-                                <h2 class="text-white text-center pb-3">Enquire Now</h2>
-                                <?php include 'form_01.php';?>
-                            </div>
+    <section class="banner-setion position-relative bg-off_white">
+        <div class="banner">
+            <div class="container-fluid banner-container">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/img/banner/1.png" class="d-view">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/img/banner/1.png" class="d-view">
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev" fdprocessedid="y53q3a">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next" fdprocessedid="zlfa2">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <img src="images/img/banner/1.png" class="d-block w-100" alt="...">
             </div>
         </div>
-    </div>
 
-    <section>
-        <div class="container d-block d-md-none">
-            <div class="row pt-3 position-relative">
-                <div class="col-md-6"></div>
-                <div class="col-md-6">
-                    <div class="p-2 bg-dark">
-                        <h2 class="text-white text-center pb-3">Enquire Now</h2>
-                        <?php include 'form_01.php';?>
+        <div class="project-details-ban">
+            <p class="project-loc">At Balewadi Central, Pune</p>
+
+            <h1 class="animate-charcter">VJ Palladio</h1>
+            <!-- <h1> Pride World City  </h1> -->
+            <div class="project-key-highlights">
+                <div class="key-high">
+                    <img src="images/img/hero/1.png" alt="">
+                    <p>Status - Under Construction</p>
+                </div>
+                <div class="key-high">
+                    <img src="images/img/hero/1.png" alt="">
+                    <p>7.76 Acre of total project area</p>
+                </div>
+                <div class="key-high">
+                    <img src="images/img/hero/1.png" alt="">
+                    <p>
+                        05 towers including all phases</p>
+                </div>
+            </div>
+            <div class="banner-price-typo">
+                <div class="banner-typology">
+                    <h3>3, 4 &amp; 4XL BHK APARTMENTS</h3>
+                </div>
+                <div class="banner-typology">
+                    <h3>Starting Price : ₹ 1.70 Cr* Onwards</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="banner-form-section">
+            <div class="form-section">
+                <div class="banner-form">
+                    <div class="form-bottom">
+                        <h4 class="form_title"> Get in Touch with Us: </h4>
+                        <!-- <p class="sub_text">Your email address will not be published.</p> -->
+                    </div>
+                    <div class="form lower-form-part">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Name" name="name"
+                                id="qSenderName1" fdprocessedid="h6ga2h">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter Email" name="email"
+                                id="qEmailID1" fdprocessedid="5mc0od">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter Number" name="number"
+                                id="qMobileNo1" fdprocessedid="2bznpw">
+                        </div>
+                        <div class="form-group">
+                            <input name="message" id="qMessage1" class="form-control" placeholder="Enter Message"
+                                fdprocessedid="rh59fe">
+                        </div>
+                        <button class="btn dark_btn rounded submit_btn" id="SubmitQuery1" fdprocessedid="j2405v">Submit
+                            Now</button>
+                        <p style="font-weight: 400;color: #ffffff;opacity: 1;font-size:10px;letter-spacing: 0.5px;margin:0;line-height:14px; margin-top
+            
+            : 7px;"><input type="checkbox" onclick="return false" checked=""> I authorize company representatives to
+                            Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any
+                            registration for
+                            DNC/NDNC.</p>
                     </div>
                 </div>
             </div>
@@ -72,80 +134,58 @@
 
     <!-- card 1st section end ====================================================================== -->
 
-    <section id="nir_about" class="">
-        <div class="container py-md-5 pb-5 pt-2">
-            <div class="row">
-                <div class="col-md-6 text-center mt-5 mt-md-0  order-2 h_01   wow  fadeInRight" data-wow-delay="01s"
-                    data-bgimg="images/img/1.png">
-                </div>
-                <div class="col-md-6 pt-md-4 pt-4 order-1 wow fadeInLeft" data-wow-delay="01s">
-                    <h2 class="pb-2 text-white">THE FINER HEART OF PUNE</h2>
-                    <p class="text-justify pe-3 lh-lg text-white">
-                        <b>A MILE OF MILESTONES</b> <br><br>
-                        A sprawling agrarian landscape of the early 20th century, Koregaon Park - Mundhwa Neighborhood
-                        has evolved to the city's refined living. With its distinct blend of serene greens, and
-                        avant-garde lifestyle, the neighbourhood offers an unrivalled tapestry of elegance and vivacity.
-                        <br>Skyline-defining architecture, artfully curated interiors, and meticulously crafted
-                        indulgences converge seamlessly to create The Supreme Towers a true pinnacle of luxury. <br>The
-                        project personifies benchmark-defining standards with world-class residences, captivating sky
-                        experiences, and breath-taking views of the shimmering gold skyline and azure river, creating a
-                        truly enchanting sight to behold.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section id="nir_featre" data-bs-toggle="modal" data-bs-target="#exampleModal_y"
+        class="header_all_pages advertise wow fadeInUp my-3" data-wow-delay="01s"
+        data-bgimg="images/img/advertise/VJ-Palladio.jpg">
     </section>
 
-    <section id="nir_featre" class="header_all_pages   wow fadeInUp" data-wow-delay="01s"
-        data-bgimg="images/img/banner/2.png">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-8 wow fadeInDown" data-wow-delay="01s">
-                    <h2 class="text-white">HIGHLIGHTS</h2>
-                    <div class="row ">
+
+    <section class="overview-section" id="overview">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-8">
+                    <div class="overview-left-section mb-4 mb-md-0">
+                        <h4>Overview</h4>
+                        <h2>Makes your self at home and enjoy a unique experience</h2>
+
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
-                            <?php
-                            $a = array("1","2","3","1");
-                            $b = array("Soaring above the sky","3, 4, 5 BHK Palatial Residences","Panoramic river and green views","World-class specifications");
-                                for ($i=0; $i < count($a); $i++) {
-                            ?>
-                            <div class="d-flex align-items-center pt-4">
-                                <img src="images/img/highlights/<?= $a[$i]; ?>.svg" width="40" height="40"
-                                    alt="" /><span class="ps-4 text-white"><?= $b[$i]; ?></span>
+                            <div class="overview-right-section">
+                                <img class="overview-img" src="images/img/overview/1.webp" alt="">
                             </div>
-                            <?php
-                            };
-                            ?>
                         </div>
                         <div class="col-md-6">
-                            <?php
-                            $a = array("5","1","7","8");
-                            $b = array("Expansive sundeck in every apartment","Cloud walk - sky bridge","Seamless connectivity","Handpicked indulgences across 4 levels");
-                                for ($i=0; $i < count($a); $i++) {
-                            ?>
-                            <div class="d-flex align-items-center pt-4">
-                                <img src="images/img/highlights/<?= $a[$i]; ?>.svg" width="40" height="40"
-                                    alt="" /><span class="ps-4 text-white"><?= $b[$i]; ?></span>
+                            <div class="overview-mid-section">
+                                <p>When every day is a new beginning, we wish to accomplish more and live to the fullest. In doing so, all one needs is a home where one can make the most of everything. Palladio, brings you a space that is carefully crafted for every member of the family without compromising on the luxuries. From being located in one of the most happening suburbs - Wakad, to being at the hub of connectivity, Palladio is a future-ready offering. It is where you feel you have really stepped-up and elevated to the next level! Welcome to Palladio, where you live next.</p>
                             </div>
-                            <?php
-                            };
-                            ?>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="overview-right-section position-relative text-center">
+                        <img class="overview-img" src="images/img/overview/1.webp" alt="">
+                        <div class="text-center">
+                            <a class="overview-btn" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Downlaod Brochure </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="nir_gallery" class=" wow fadeInUp" data-wow-delay="01s">
-        <div class="container pt-4">
-            <h2 class="fs-2 text-white mb-4">Gallery</h2>
-            <div class="h_gallrey owl-carousel">
+    
+    <section id="nir_gallery py-5" class=" wow fadeInUp" data-wow-delay="01s">
+        <div class="container pb-5">
+            <h2 class="fs-2  mb-4 text-center">Gallery</h2>
+            <h6 class="fs-1 mb-4 text-center">An Unforgettable Once-in-a-Lifetime Experience</h6>
+            <div class="h_gallrey owl-carousel align-items-center">
                 <?php
-                    for ($i=1; $i < 16; $i++) { 
+                    for ($i=1; $i < 6; $i++) { 
                 ?>
-                <div class="mb-4">
-                    <img src="images/img/gallery/<?= $i+1; ?>.webp" class="w-100 rounded"
+                <div class="mb-4 gallery_div">
+                    <img src="images/img/gallery/g<?= $i+1; ?>.webp" class="w-100 rounded"
                     onclick="z_openModal();z_currentSlide(<?= $i+1; ?>)" alt="">
                 </div>
                 <?php
@@ -156,11 +196,11 @@
                 <span class="close cursor" onclick="z_closeModal()">&times;</span>
                 <div class="z_modaly-content">
                     <?php
-                        for ($i=1; $i < 16; $i++) { 
+                        for ($i=1; $i < 6; $i++) { 
                     ?>
                     <div class="z_mySlides text-center">
-                        <div class="numbertext"><?= $i+1; ?> / 16</div>
-                        <img src="images/img/gallery/<?= $i+1; ?>.webp">
+                        <div class="numbertext"><?= $i+1; ?> / 6</div>
+                        <img src="images/img/gallery/g<?= $i+1; ?>.webp">
                     </div>
                     <?php
                         }
@@ -214,134 +254,154 @@
         </div>
     </section>
 
-
-
-    <section id="section-location " class="p-0 wow fadeInUp" data-wow-delay="1s">
-        <div class="container position-relative">
-            <div class="row ps-md-5 top_01  pt-md-5 text-white ">
-                <div class=" pos_top_01 pt-3 ">
-                    <div class="pe-3">
-                        <h2>Location</h2>
-                    </div>
-                    <div class="ps-md-4 b_01">
-                        <span class="title-tagline mt-0 mb-5">The Finest Live Here. Welcome To The Billionaire’s
-                            Borough.</span>
-                        <p>Originally favored by influential families, Koregaon Park Mundhwa Neighborhood's allure
-                            quickly captivated the business elites. Today, this prestigious neighborhood continues
-                            to draw in prominent businessmen and more, cementing its reputation as 'Pune's Finest
-                            Address'.</p>
-                        <p>Lined by gated communities and residences draped in quietude, Koregoan Park has evolved
-                            to be the epicentre of power and wealth in Pune.</p>
-                        <p>In the heart of high life.</p>
-                    </div>
-                </div>
+    <section class="price-section" id="price">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h4 class=" mb-3">Price </h4>
+                <h2 class="mb-5">Unlock the Door to Affordable Luxury</h2>
             </div>
-        </div>
-        <img src="images/img/map_02.jpg" class="w-100 " alt="" />
-    </section>
+            <div class="row justify-content-center">
 
-    <section class="" id="">
-        <div class="container py-md-5 py-5">
-            <div class="row text-white">
-                <div class="col-md-7   wow fadeInLeft" data-wow-delay="01s">
-                    <h2 class="fs-2 mb-4">about supreme universal</h2>
-                    <p>
-                        At Supreme Universal, we believe in creating spaces, community, and experiences that are built
-                        with trust, integrity, and innovation. With a passion for delivering excellence, we redefine new
-                        standards of living. Our tryst for perfection reflects in every creation and smiles of our
-                        customers. <br><br>Driven by an unwavering commitment to time-bound delivery and time-tested
-                        innovations, we have created enduring landmarks that have lived up to global benchmarks.
-                        Redefining the skylines across Mumbai and Pune, our vision of shaping a future where people
-                        thrive in inspiring and sustainable environments is coming alive – one square feet at a time.
-                        Fulfilled dreams, Fuller hearts.
-                    </p>
-                </div>
-                <div class="col-md-5 text-center   wow fadeInRight " data-wow-delay="01s">
-                    <img src="images/img/logo_02.png" alt="" class="h_02">
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="col-md-4 mt-3">
+                    <div class="price-details">
+                        <div class="price-floor-plan">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                        </div>
+                        <div class="price-content">
+                            <h3 class="typology">3 BHK Apartments</h3>
+                            <div class="pricing">
+                                <h4>Starting Price</h4>
+                                <h3>₹ 1.70 Cr* <span>Onwards</span></h3>
+                            </div>
 
-    <!-- why chooose us section starts -->
-    <div id="nir_specs" class="nir_specs header_all_pages_01  wow fadeInUp " data-wow-delay="01s"
-        data-bgimg="images/img/banner/3.webp">
-        <div class="container py-5  ">
-            <div class="row px-md-0 px-3  wow fadeInDown " data-wow-delay="01s">
-                <p class="t-orange">WHY ARE WE PEOPLE’S CHOICE?</p>
-                <div class="col-md-3 pb-5 pb-md-0">
-                    <h5 class="pb-3 text-white">Perfect 6/6 Professionalism, <br> Consistently Surpassing <br>
-                        Expectations.</h5>
-                    <button class="btn px-4 py-2 mt-2 mb-3 btn_01" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Enquire Now</button>
-                </div>
-                <div class="col-md-9">
-                    <div class="row ">
-                        <?php
-                       $a = array("1","2","3","4","5","6"); 
-                       $b = array("40+ Years of Excellence","Presence : Mumbai & Pune","75+ Icons Delivered","Track-Record of Timely Delivery","10 mn + sq ft delivered & ongoing","Superior Construction & Design"); 
-                       
-                       for ($i=0; $i < count($a) ; $i++) { 
-                        ?>
-                        <div class="col-md-6 why_choose_01 pb-2 pb-md-0">
-                            <div class="pt-md-<?= $i!=0 && $i!=1 ?'3':'0'; ?> pt-3 d-flex align-items-center ">
-                                <img src="images/img/icons/<?= $a[$i];?>.svg" alt="" width="60px" height="60px">
-                                <div class="ps-3 text-white">
-                                    <span><?= $b[$i];?></span>
-                                </div>
+                            <div class="border-btm"></div>
+                            <div class="sizing">
+                                <h4>Size </h4>
+                                <h4>1122 - 1255 Sq.Ft.</h4>
+                            </div>
+
+
+                            <div class="price-query-btn">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Query Now</a>
                             </div>
                         </div>
-                        <?php
-                      };
-                    ?>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- why chooose us section End -->
 
-    <section id="mir_floor" class="py-5  wow fadeInUp " data-wow-delay="01s">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-white mb-4">PROJECTS</h2>
-                </div>
-
-            </div>
-            <div class="row h_owl_alumni owl-carousel">
-                <?php
-                $a = array("6","2","5","3","4","1");
-                $b = array("Supreme Pallacio ","Supreme Amadore ","Supreme Headquarters ","Supreme Artveda ","Supreme Esteban","Supreme Adimaa ");
-                $c = array("Completed","Completed","Completed","Completed","Completed","Completed");
-                $d = array("Residential","Residential","Residential","Residential","Residential","Residential");
-                $e = array("Baner - Pune","Baner - Pune","Bandra - Mumbai","Pali Hill - Mumbai"," Koregaon Park - Pune","Boat Club Road - Pune");
-                    for ($i=1; $i < count($a); $i++) {
-                ?>
-                <div class="col-md-12 position-relative height_01 header_all_pages_02"
-                    data-bgimg="images/img/projects/<?= $a[$i]; ?>.jpg">
-                    <div class="row">
-                        <div class="col-md-12 pt-4 ps-5">
-                            <span class="h6 text-white"><?= $b[$i]; ?></span>
+                <div class="col-md-4 mt-3">
+                    <div class="price-details">
+                        <div class="price-floor-plan">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                        </div>
+                        <div class="price-content">
+                            <h3 class="typology">4 BHK Apartments</h3>
+                            <div class="pricing">
+                                <h4>Starting Price</h4>
+                                <h3>₹ 2.10 Cr* <span>Onwards</span></h3>
+                            </div>
+                            <div class="border-btm"></div>
+                            <div class="sizing">
+                                <h4>Size </h4>
+                                <h4>1479 - 1487 Sq.Ft.</h4>
+                            </div>
+                            <div class="price-query-btn">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Query Now</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row position_01 text-white text-center">
-                        <div class="col-4 border-end"><span>Status</span><br><span><?= $c[$i]; ?></span></div>
-                        <div class="col-4 border-end"><span>Project</span><br><span><?= $d[$i]; ?></span></div>
-                        <div class="col-4"><span>Location</span><br><span><?= $e[$i]; ?></span></div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="price-details">
+                        <div class="price-floor-plan">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                        </div>
+                        <div class="price-content">
+                            <h3 class="typology">4 BHK XL Apartments</h3>
+                            <div class="pricing">
+                                <h4>Starting Price</h4>
+                                <h3>On Request</h3>
+                            </div>
+                            <div class="border-btm"></div>
+                            <div class="sizing">
+                                <h4>Size </h4>
+                                <h4>On Request</h4>
+                            </div>
+                            <div class="price-query-btn">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Query Now</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <?php
-                  }
-                ?>
-            </div>
-            <div class="text-center">
-                <button class="btn px-4 py-2 mt-2 mb-3 border-3 btn_01" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">Enquire Now</button>
+
+
             </div>
         </div>
     </section>
+<!-- ===================================================================================================================================== -->
+<section class="location-advantages" id="location-advantage">
+    <div class="container">
+      <h4 class="section-head text-center">Location Advantages</h4>
+      <h2 class="section-head-para text-center">Discover Your Perfect Place in the Perfect Location</h2>
+      <div class="location-details">
+        <div class="row justify-content-between align-items-center">
 
+          <div class="col-md-6">
+
+            <div class="location-points">
+              <div class="loc2"><span>1.5 <br> Km</span></div>
+              <div class="loc1">
+                <!-- <img src="images/icons/pin.png" alt=""> -->
+                <p>Baner D-Mart </p>
+              </div>
+            </div>
+
+            <div class="location-points">
+              <div class="loc2"><span>1.5 <br> Km</span></div>
+              <div class="loc1">
+                <p>Balewadi Phata</p>
+              </div>
+            </div>
+
+            <div class="location-points">
+              <div class="loc2"><span>1.5 <br> Km</span></div>
+              <div class="loc1">
+                <p>Balewadi Stadium </p>
+              </div>
+            </div>
+
+            <div class="location-points">
+              <div class="loc2"><span>1.5 <br> Km</span></div>
+              <div class="loc1">
+                <p>Orchid Hotel</p>
+              </div>
+            </div>
+
+            <div class="location-points">
+              <div class="loc2"><span>500 <br> M</span></div>
+              <div class="loc1">
+                <p>Balewadi High Street</p>
+              </div>
+            </div>
+            <div class="location-points">
+              <div class="loc2"><span>500 <br> M</span></div>
+              <div class="loc1">
+                <p>Jupitor Hospital</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="location-map-image">
+              <a href="images/map.webp" class="with-caption image-link" title="Floor Plan 2">
+                <img class="img-fluid" src="images/img/map.webp" alt="">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
     <section id="nir_location">
         <div class="container-fluid">
@@ -375,7 +435,8 @@
     <!-- -------------------------------------------footer------------------------------------------------->
     <!-- -------------------------------------------footer------------------------------------------------->
 
-    <button class="btn sil_d_gradient open_othbtn oth_modal enquir_right_btn" data-bs-toggle="modal" data-bs-target="#exampleModal_y">Enquire
+    <button class="btn sil_d_gradient open_othbtn oth_modal enquir_right_btn" data-bs-toggle="modal"
+        data-bs-target="#exampleModal_y">Enquire
         Now</button>
     <div class="modal fade open_othbtn oth_modal modal_bg header_all_pages_01" data-bgimg="images/img/banner/1.png"
         id="exampleModal_y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -392,8 +453,8 @@
         </div>
     </div>
 
-    <div class="modal fade  header_all_pages_01" data-bgimg="images/img/banner/1.png" id="exampleModal"
-        tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade  header_all_pages_01" data-bgimg="images/img/banner/1.png" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content p-5 position-relative bg-dark">
                 <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -420,43 +481,7 @@
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="assets/owl.carousel.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.h_gallrey').owlCarousel({
-                margin: 10,
-                nav: true,
-                autoplay: true,
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            })
-            $('.h_owl_alumni').owlCarousel({
-                margin: 10,
-                nav: true,
-                autoplay: true,
-                loop: true,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3.1
-                    }
-                }
-            })
-        })
-
+        
 
         // for baground image
         $('[data-bgimg]').each(function () {
@@ -491,6 +516,6 @@
 
 
         ///// load the page and pop up
-			// $(".open_othbtn").trigger("click");
+        // $(".open_othbtn").trigger("click");
     </script>
 </body>

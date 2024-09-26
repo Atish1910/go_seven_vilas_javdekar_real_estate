@@ -15,7 +15,45 @@
             navbar.classList.remove('scrolled');
         }
     }
+
     
+    $(document).ready(function () {
+        $('.h_gallrey').owlCarousel({
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+        $('.h_owl_alumni').owlCarousel({
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3.1
+                }
+            }
+        })
+    })
+
 
     
     $('.newformy').on('submit', function () {
