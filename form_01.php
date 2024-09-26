@@ -10,16 +10,8 @@
         <div class="col-md-12 mb-4">
             <input type="number" class="form-control" placeholder="Enter Phone No.*" name="phone">
         </div>
-        <div class="col-md-6 mb-4">
-            <input type="text" class="form-control" placeholder="Enter Your Locality *" name="locality">
-        </div>
-        <div class="col-md-6 mb-4">
-            <select name="plans" class="form-control">
-                <option selected disabled>Select Plan *</option>
-                <option value="5BHK">5 BHK</option>
-                <option value="4BHK">4 BHK</option>
-                <option value="3BHK">3 BHK</option>
-            </select>
+        <div class="col-md-12 mb-4">
+            <input type="text" class="form-control" placeholder="Enter Your Message *" name="locality">
         </div>
         <div class="col-md-12 text-center d-grid">
             <button type="submit" class="btn  px-4 py-2 mt-2 mb-3 btn_01">SEND MESSAGE</button>

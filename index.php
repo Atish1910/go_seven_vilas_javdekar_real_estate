@@ -10,8 +10,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="images/img/fevicon.svg" type="image/x-icon">
-    <title>Luxury Flats and Homes in Pune | Supreme Towers</title>
+    <link rel="shortcut icon" href="images/img/favicon.ico" type="image/x-icon">
+    <title>VJ Palladio | 3, 4 & 4XL BHK APARTMENTS | At Balewadi Central, Pune</title>
     <meta name="description"
         content="Your gateway to luxury flats and homes in Pune. Unmatched elegance, prime locations, and modern amenities await you. Find your dream home today!">
     <meta name="keywords"
@@ -120,9 +120,7 @@
                         </div>
                         <button class="btn dark_btn rounded submit_btn" id="SubmitQuery1" fdprocessedid="j2405v">Submit
                             Now</button>
-                        <p style="font-weight: 400;color: #ffffff;opacity: 1;font-size:10px;letter-spacing: 0.5px;margin:0;line-height:14px; margin-top
-            
-            : 7px;"><input type="checkbox" onclick="return false" checked=""> I authorize company representatives to
+                        <p class="form_checkbox"><input type="checkbox" onclick="return false" checked=""> I authorize company representatives to
                             Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any
                             registration for
                             DNC/NDNC.</p>
@@ -139,7 +137,7 @@
         data-bgimg="images/img/advertise/VJ-Palladio.jpg">
     </section>
 
-
+<!-- ============================================================================================================================     -->
     <section class="overview-section" id="overview">
         <div class="container">
             <div class="row justify-content-between">
@@ -175,7 +173,7 @@
             </div>
         </div>
     </section>
-    
+<!-- ============================================================================================================================     -->
     <section id="nir_gallery py-5" class=" wow fadeInUp" data-wow-delay="01s">
         <div class="container pb-5">
             <h2 class="fs-2  mb-4 text-center">Gallery</h2>
@@ -253,6 +251,7 @@
             </script>
         </div>
     </section>
+<!-- ============================================================================================================================     -->
 
     <section class="price-section" id="price">
         <div class="container">
@@ -338,143 +337,95 @@
         </div>
     </section>
 <!-- ===================================================================================================================================== -->
-<section class="location-advantages" id="location-advantage">
+
+
+<section class="price-section" id="price">
     <div class="container">
-      <h4 class="section-head text-center">Location Advantages</h4>
-      <h2 class="section-head-para text-center">Discover Your Perfect Place in the Perfect Location</h2>
-      <div class="location-details">
-        <div class="row justify-content-between align-items-center">
-
-          <div class="col-md-6">
-
-            <div class="location-points">
-              <div class="loc2"><span>1.5 <br> Km</span></div>
-              <div class="loc1">
-                <!-- <img src="images/icons/pin.png" alt=""> -->
-                <p>Baner D-Mart </p>
-              </div>
-            </div>
-
-            <div class="location-points">
-              <div class="loc2"><span>1.5 <br> Km</span></div>
-              <div class="loc1">
-                <p>Balewadi Phata</p>
-              </div>
-            </div>
-
-            <div class="location-points">
-              <div class="loc2"><span>1.5 <br> Km</span></div>
-              <div class="loc1">
-                <p>Balewadi Stadium </p>
-              </div>
-            </div>
-
-            <div class="location-points">
-              <div class="loc2"><span>1.5 <br> Km</span></div>
-              <div class="loc1">
-                <p>Orchid Hotel</p>
-              </div>
-            </div>
-
-            <div class="location-points">
-              <div class="loc2"><span>500 <br> M</span></div>
-              <div class="loc1">
-                <p>Balewadi High Street</p>
-              </div>
-            </div>
-            <div class="location-points">
-              <div class="loc2"><span>500 <br> M</span></div>
-              <div class="loc1">
-                <p>Jupitor Hospital</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            <div class="location-map-image">
-              <a href="images/map.webp" class="with-caption image-link" title="Floor Plan 2">
-                <img class="img-fluid" src="images/img/map.webp" alt="">
-              </a>
-            </div>
-          </div>
-
+        <div class="row justify-content-center text-center">
+            <h4 class=" mb-3">Our Amenities</h4>
+            <h2 class="mb-5">Amenities that Define Excellence</h2>
         </div>
-      </div>
+        <div class="row">
+                <?php 
+                $a = array('1','8','5','4','6','2','7','3');
+                $b = array( 'Infinity Pool', 'Gymnasium', 'Pool Deck', 'Senior Citizen Area', 'Walking Track', 'Yoga', 'Designer Gazebo', 'Acupressure Path');
+                for ($i=0; $i < count($a) ; $i++) { 
+                ?>
+            <div class="col-md-3 mb-3">
+                <div class="bg-off_white rounded-3 border p-3">
+                    <img src="images/img/aminities/a<?= $a[$i];?>.webp" class="img-fluid" alt="">
+                    <div class="text-center pt-3">
+                        <h6 class="fw-bold fs-5"><?= $b[$i];?></h6>
+                    </div>
+                </div>
+            </div>
+            <?php 
+                }
+            ?>
+        </div>
     </div>
-  </section>
+</section>
 
-    <section id="nir_location">
-        <div class="container-fluid">
-            <div class="row d-md-block d-md-flex d-none ">
-                <div class="col-md-6 ">
-                    <h2 class="fs-2 t-ogrey text-center mb-4">Location</h2>
-                </div>
-                <div class="col-md-6 ">
-                    <h2 class="fs-2 t-ogrey text-center mb-4">Enquire Now</h2>
-                </div>
-            </div>
-            <div class="row align-items-center">
+<!-- ===================================================================================================================================== -->
+<!-- ===================================================================================================================================== -->
+<!-- ===================================================================================================================================== -->
 
-                <div class="col-md-6 px-0   wow  fadeInLeft" data-wow-delay="01s">
-                    <h2 class="text-center text-white mb-4 d-block d-md-none">Location</h2>
-                    <a href="https://maps.app.goo.gl/mXn99jTvwwFWyaqQA" target="_blank">
-                        <img src="images/img/map_01.webp" class="w-100" alt="">
-                    </a>
-                </div>
-                <div class="col-md-6 px-md-5 wow py-5 py-md-0  fadeInRight" data-wow-delay="01s">
-                    <?php  include 'form_01.php'; ?>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- -------------------------------------------footer------------------------------------------------->
-    <!-- -------------------------------------------footer------------------------------------------------->
+
+
+
 
     <?php  include 'footer.php'; ?>
     <!-- -------------------------------------------footer------------------------------------------------->
     <!-- -------------------------------------------footer------------------------------------------------->
 
     <button class="btn sil_d_gradient open_othbtn oth_modal enquir_right_btn" data-bs-toggle="modal"
-        data-bs-target="#exampleModal_y">Enquire
-        Now</button>
-    <div class="modal fade open_othbtn oth_modal modal_bg header_all_pages_01" data-bgimg="images/img/banner/1.png"
+        data-bs-target="#exampleModal_y">Query Now</button>
+    <div class="modal fade open_othbtn oth_modal modal_bg header_all_pages_01"+
         id="exampleModal_y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content p-5 position-relative bg-dark">
+            <div class="modal-content position-relative">
                 <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body p-3 border">
-                    <h5 class="modal-title pb-4 text-center text-white" id="exampleModalLabel">Enquire Now</h5>
-                    <?php
-                      include 'form_01.php';
-                    ?>
+                <div class="row px-md-3">
+                    <div class="col-md-6 header_all_pages_03" data-bgimg="images/img/VJ-Palladio-popup.jpg">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <h5 class="modal-title text-center text-white" id="exampleModalLabel">VJ Palladio</h5>
+                    <p class=" pb-4 text-center text-white">At Balewadi Central, Pune</p>
+                    <?php include 'form_01.php';?>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade  header_all_pages_01" data-bgimg="images/img/banner/1.png" id="exampleModal" tabindex="-1"
+    <div class="modal fade" id="exampleModal" tabindex="-1"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content p-5 position-relative bg-dark">
+        <div class="modal-content position-relative">
                 <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body p-3 border">
-                    <h5 class="modal-title pb-4 text-center text-white" id="exampleModalLabel">Download Brochure Now
-                    </h5>
-                    <?php
-                      include 'form_02.php';
-                    ?>
+                <div class="row px-md-3">
+                    <div class="col-md-6 header_all_pages_03" data-bgimg="images/img/VJ-Palladio-popup.jpg">
+                        <div class="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <h5 class="modal-title text-center text-white" id="exampleModalLabel">VJ Palladio</h5>
+                    <p class=" pb-4 text-center text-white">At Balewadi Central, Pune</p>
+                    <?php include 'form_01.php';?>
+                    </div>
+                </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
     <!-- Footer -->
-
-    <!-- <a href="https://wa.me/91XXXXXXXX" target="_blank" class="m_whats px-3 py-3 border-radius-15 position-fixed">
-        <i class="fa fa-whatsapp fs-3 text-white"></i>
-        <i class="fa fa-whatsapp fs-3 text-white"></i>
-    </a> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.3.js"
