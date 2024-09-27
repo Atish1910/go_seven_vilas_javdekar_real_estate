@@ -1,5 +1,8 @@
 <?php
   include 'link.php';
+  ob_start('ob_gzhandler');
+  date_default_timezone_set('Asia/Kolkata');
+  setcookie("utm_medium", isset($_GET['utm_medium']) ? $_GET['utm_medium'] : 'Direct', strtotime(date('Y-m-d H:i:s'))+1200);
 ?>
 <!doctype html>
 <html lang="en">

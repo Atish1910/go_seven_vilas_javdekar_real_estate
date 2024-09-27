@@ -60,7 +60,7 @@
         var vjform = $(this);
         let url = $(this).find(".vjaction").data("vjform");
         var btn = true;
-        vjform.find('input, textarea').each(function () {
+        vjform.find('.form-control').each(function () {
             var n = $(this).val();
             if ($.trim(n) == "") {
                 $(this).css("border", "1px solid red");

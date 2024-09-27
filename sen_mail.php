@@ -11,8 +11,9 @@
 	// Validation function
 	function validate($m, $k = '') {
 		$m = trim($m);
-		if ($m == "")
-			die("Please Fill the missing Field");
+			// this validation is hide because utm source medium and campaign values are empty shore inside form.
+			// if ($m == "")
+			// 	die("Please Fill the missing Field");
 
 		$val = array('url', 'www', 'http', '.com', 'disclaimar');
 		
@@ -39,19 +40,51 @@
 	}
 
 	// Input validation
-	$name = validate($_POST['name']);
+	$fname = validate($_POST['fname']);
 	$email = validate($_POST['email'], 'email');
 	$phone = validate($_POST['phone'], 'phone');
-	$message = validate($_POST['message']);
+	$msg = validate($_POST['msg']);
 
-	// Database insertion
-	$query12 = "INSERT INTO `vj_enquiry`(`name`, `email`, `phone`, `message`) 
-				VALUES ('$name','$email','$phone','$message')";
+	// $utm_source = isset($_COOKIE['utm_source']) ? $_COOKIE['utm_source'] : 'Direct';
+	// $utm_medium = isset($_COOKIE['utm_medium']) ? $_COOKIE['utm_medium'] : 'Direct';
+	// $utm_campaign = isset($_COOKIE['utm_campaign']) ? $_COOKIE['utm_campaign'] : 'Direct';
+	// $utm_term = isset($_COOKIE['utm_term']) ? $_COOKIE['utm_term'] : 'Direct';
+	// $utm_content = isset($_COOKIE['utm_content']) ? $_COOKIE['utm_content'] : 'Direct';
 
-	if (mysqli_query($mysqli, $query12)) {
-		echo "y";
-	} else {
-		// If database insertion failed
-		echo "<script>alert('There was an error adding your record. Please try again.');</script>";
-	}
+	
+	$utm_source =$_POST['utm_source'];
+	$utm_medium = isset($_COOKIE['utm_medium']) ? $_COOKIE['utm_medium'] : 'Direct';
+	$utm_campaign = $_POST['utm_campaign'];
+	$utm_term = $_POST['utm_term'];
+	$utm_content = $_POST['utm_content'];
+
+
+	
+// Check if email or phone already exists in the database
+$EmailcheckQuery = "SELECT * FROM `vj_enquiry` WHERE email='$email'";
+$PhonecheckQuery = "SELECT * FROM `vj_enquiry` WHERE phone='$phone'";
+
+$checkEmail = mysqli_query($mysqli, $EmailcheckQuery);
+$checkPhone = mysqli_query($mysqli, $PhonecheckQuery);
+
+// If email or phone already exists
+if (mysqli_num_rows($checkEmail) > 0) {
+    echo "Email already exists. Please use a different one";
+}
+else if(mysqli_num_rows($checkPhone) > 0){
+	echo "Mobile Number is already exists. Please use a different one";
+} 
+else {
+    // If no duplicate, insert the new record into the database
+    $query12 = "INSERT INTO `vj_enquiry`(fname, email, phone, msg , utm_source, utm_medium, utm_campaign, utm_term, utm_content) 
+                VALUES ('$fname','$email','$phone','$msg', '$utm_source', '$utm_medium', '$utm_campaign', '$utm_term', '$utm_content')";
+
+    if (mysqli_query($mysqli, $query12)) {
+        echo "y";
+    } else {
+        // If database insertion failed
+        echo "<script>alert('There was an error adding your record. Please try again.');</script>";
+    }
+}
+
 ?>
