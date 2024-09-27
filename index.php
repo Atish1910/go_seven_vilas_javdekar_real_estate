@@ -13,9 +13,8 @@
     <link rel="shortcut icon" href="images/img/favicon.ico" type="image/x-icon">
     <title>VJ Palladio | 3, 4 & 4XL BHK APARTMENTS | At Balewadi Central, Pune</title>
     <meta name="description"
-        content="Your gateway to luxury flats and homes in Pune. Unmatched elegance, prime locations, and modern amenities await you. Find your dream home today!">
-    <meta name="keywords"
-        content="luxury flats Pune, premium homes, real estate Pune, residential properties, modern apartments, prime locations, spacious living, Pune housing, dream homes">
+        content=""
+        content="">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -159,75 +158,42 @@
             <h6 class="fs-1 mb-4 text-center">An Unforgettable Once-in-a-Lifetime Experience</h6>
             <div class="h_gallrey owl-carousel align-items-center">
                 <?php
-                    for ($i=1; $i < 6; $i++) { 
+                $a = array('1','2','3','4','5','6');
+                    for ($i=1; $i < count($a); $i++) { 
                 ?>
                 <div class="mb-4 gallery_div">
-                    <img src="images/img/gallery/g<?= $i+1; ?>.webp" class="w-100 rounded"
-                    onclick="z_openModal();z_currentSlide(<?= $i+1; ?>)" alt="">
+                    <img src="images/img/gallery/g<?= $a[$i]; ?>.webp" class="w-100 rounded" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal_q<?= $a[$i]; ?>">
                 </div>
                 <?php
                     }
                 ?>
             </div>
-            <div id="z_myModaly" class="z_modaly">
-                <span class="close cursor" onclick="z_closeModal()">&times;</span>
-                <div class="z_modaly-content">
-                    <?php
-                        for ($i=1; $i < 6; $i++) { 
-                    ?>
-                    <div class="z_mySlides text-center">
-                        <div class="numbertext"><?= $i+1; ?> / 6</div>
-                        <img src="images/img/gallery/g<?= $i+1; ?>.webp">
+            <!-- Modal -->
+            <?php
+            for ($i=6; $i > 1; $i--) { 
+            ?>
+            <div class="modal fade" id="exampleModal_q<?= $i-1; ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg form_02">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-body p-0">
+                            <?php
+                            ?>
+                            <div class=" text-center">
+                                <div class="p-0 text-center">
+                                    <img src="images/img/gallery/g<?= $i-1; ?>.webp" class="w-100 " alt="...">
+                                </div>
+                            </div>
+                            <?php
+                            ?>
+                        </div>
                     </div>
-                    <?php
-                        }
-                    ?>
-                    <a class="prev" onclick="z_plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="z_plusSlides(1)">&#10095;</a>
                 </div>
             </div>
-            <script>
-                function z_openModal() {
-                    document.getElementById("z_myModaly").style.display = "block";
-                }
-
-                function z_closeModal() {
-                    document.getElementById("z_myModaly").style.display = "none";
-                }
-
-                var z_slideIndex = 1;
-                z_showSlides(z_slideIndex);
-
-                function z_plusSlides(n) {
-                    z_showSlides(z_slideIndex += n);
-                }
-
-                function z_currentSlide(n) {
-                    z_showSlides(z_slideIndex = n);
-                }
-
-                function z_showSlides(n) {
-                    var i;
-                    var slides = document.getElementsByClassName("z_mySlides");
-                    var dots = document.getElementsByClassName("demo");
-                    var captionText = document.getElementById("caption");
-                    if (n > slides.length) {
-                        z_slideIndex = 1
-                    }
-                    if (n < 1) {
-                        z_slideIndex = slides.length
-                    }
-                    for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                    }
-                    for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                    }
-                    slides[z_slideIndex - 1].style.display = "block";
-                    dots[z_slideIndex - 1].className += " active";
-                    captionText.innerHTML = dots[z_slideIndex - 1].alt;
-                }
-            </script>
+            <?php
+            }
+            ?>
         </div>
     </section>
 <!-- ============================================================================================================================     -->

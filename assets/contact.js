@@ -84,13 +84,14 @@
                         setTimeout(function () {
                             mbtn.attr('disabled', false);
                             mbtn.css("cursor", "pointer");
-                            location.reload();
+                            window.location.href = 'thankyou';
+                            // location.reload();
                         }, 2000)
                     } else {
                         vjform.find('.error1').html(data);
                         setTimeout(function () {
                             vjform.find(".error1").html("")
-                            mbtn.html('Enquire');
+                            mbtn.html('Submit Now');
                         }, 4000)
                         mbtn.attr('disabled', false);
                         mbtn.css("cursor", "pointer");

@@ -1095,10 +1095,15 @@ img.demo {
 .h_04 {
     height: 60px;
 }
-
+.form_02 .btn-close {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
 /* Styling when navbar has the 'scrolled' class */
 .navbar.scrolled {
     background-color: #f4f1e8;
+    border-bottom: 1px solid #0000004a;
     /* Change to your desired background color */
 }
 
