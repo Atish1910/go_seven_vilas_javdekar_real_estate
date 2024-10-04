@@ -1,5 +1,5 @@
 <div class="overflow-hidden">
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 zindex-99 shadow_white">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 zindex-99 shadow_white bg-white">
         <div class="container">
             <a href="<?= LINK; ?>">
                 <img class="logo bs_logo" src="images/img/logo.webp" alt="">
@@ -11,22 +11,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#nir_about">About Us</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link fw-bold" href="#nir_featre">Highlights</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#nir_gallery">Gallery</a>
+                        <a class="nav-link fw-bold" href="#overview">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#nir_location">Location</a>
+                        <a class="nav-link fw-bold" href="#gallery">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#nir_specs">Why Us</a>
+                        <a class="nav-link fw-bold" href="#price">Floor Plan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fw-bold" href="#mir_floor">Projects</a>
+                        <a class="nav-link fw-bold" href="#amenities">Amenities</a>
                     </li>
                 </ul>
                 <a href="#" class="btn btn_01 my-2 my-sm-0 ms-md-3" data-bs-toggle="modal"

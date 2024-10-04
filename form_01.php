@@ -21,9 +21,10 @@
         <input type="hidden" name="utm_campaign" value="">
         <input type="hidden" name="utm_term" value="">
         <input type="hidden" name="utm_content" value="">
+
         <div class="col-md-12 text-center d-grid">
-            <button type="submit" class="btn  px-4 py-2 mt-2 mb-3 btn_01">SUBMIT NOW</button>
-            <div class="success1 text-white"></div>
+            <button type="submit" class="btn  px-4 py-2 mt-2 mb-3 btn_01">Submit Now</button>
+            <div class="success1 text-success"></div>
             <div class="error1 text-danger"></div>
         </div>
     </div>

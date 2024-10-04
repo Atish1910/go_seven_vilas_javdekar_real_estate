@@ -2,13 +2,14 @@
 
 :root {
     --dblue: #18b9d2;
+    --red: #b62127;
     --green: #529f4b;
     --lblack: #23262d;
     --ogrey: #e4e1dc;
     --cgrey: #828282;
     --black: #000;
     --orange: #e66a25;
-    --off_white: #f4f1e8;
+    --off_white: #eeeeee;
 }
 
 @font-face {
@@ -157,6 +158,10 @@ h6 {
 .t-green {
     color: var(--green) !important;
 }
+
+.bg-red {
+    background-color: var(--red) !important;
+}
 /* 
 .sil_gradient {
     background-image: linear-gradient(to right, #c8c9ca, #d9dada) !important;
@@ -235,7 +240,7 @@ h5 {
 /* /////////////////////////////////////////////////// */
 .container-fluid.banner-container {
     width: calc(100%);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 0;
 }
 
@@ -604,19 +609,27 @@ h4.form_title {
     z-index: 1;
 }
 
+
 .btn_01 {
-    color: white;
-    border: solid 1px;
+    color: white ;
+    background-color: #b62127 ;
+    /* border: solid 1px; */
+    font-weight: 700;
+    box-shadow: unset !important;
+    /* border-radius: 30px !important; */
+}
+
+.btn_01:hover {
+    color: white ;
+    background-color: #b62127 ;
+    font-weight: 700;
+    /* border-radius: 30px !important; */
 }
 
 .form-control:focus {
     box-shadow: unset;
 }
 
-.btn_01:hover {
-    color: var(--orange);
-    border: solid 1px;
-}
 
 .header_all_pages_01 {
     background-blend-mode: multiply;
@@ -693,17 +706,16 @@ a:hover {
     transform: rotate(90deg);
     transform-origin: right;
     position: fixed;
-    background: #213c37;
+    background: var(--red);
     border: 0;
     border-radius: 5px;
     z-index: 99;
     color: white;
+    box-shadow: unset !important;
 }
 .enquir_right_btn:hover {
-    color: #213c37;
-    font-weight: bold;
-    background: white;
-    border: solid 1px #213c37;
+    color:  white;
+    background:var(--red);
 
 }
 
@@ -785,21 +797,21 @@ a:hover {
 
 .bs_logo {
     height: 50px;
-    filter: invert(1) brightness(30);
+    /* filter: invert(1) brightness(30); */
 }
 
 nav.navbar .nav-item a {
-    color: var(--bs-white);
+    color: black;
     font-size: 15px;
     padding: 0 8px !important;
 }
 
 nav.navbar .nav-item a.active {
-    color: var(--orange);
+    color: var(--red);
 }
 
 .navbar-toggler-icon {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAzMCAzMCc+PHBhdGggc3Ryb2tlPSdyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNTUpJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1taXRlcmxpbWl0PScxMCcgc3Ryb2tlLXdpZHRoPScyJyBkPSdNNCA3aDIyTTQgMTVoMjJNNCAyM2gyMicvPjwvc3ZnPg==')
+    background-image: url('./images/img/hamburger.png')
 }
 
 .h_specific .h_specific_img {
@@ -984,12 +996,12 @@ img.demo {
 
 .h_gallrey.owl-carousel .owl-nav button.owl-next,
 .h_owl_alumni.owl-carousel .owl-nav button.owl-next {
-    right: 45%;
+    right: 36%;
 }
 
 .h_gallrey.owl-carousel .owl-nav button.owl-prev,
 .h_owl_alumni.owl-carousel .owl-nav button.owl-prev {
-    left: 45%;
+    left: 36%;
 }
 .gallery_div{
     padding: 10px;
@@ -1099,6 +1111,7 @@ img.demo {
     position: absolute;
     z-index: 1;
     right: 0;
+    top: 15px;
 }
 /* Styling when navbar has the 'scrolled' class */
 .navbar.scrolled {
@@ -1118,8 +1131,18 @@ img.demo {
 }
 
 .scrolled .btn_01 {
-    color: #000;
-    border: solid 1px #000;
+    color: white ;
+    background-color: #b62127 ;
+    border: solid 1px;
+    font-weight: 700;
+    box-shadow: unset !important;
+}
+
+.scrolled .btn_01:hover {
+    color: white ;
+    background-color: #b62127 ;
+    font-weight: 700;
+    /* border-radius: 30px !important; */
 }
 .advertise{
     background: unset;
@@ -1127,6 +1150,7 @@ img.demo {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    display: none;
 }
 
 @keyframes zoom-out {
@@ -1176,12 +1200,12 @@ img.demo {
 a.overview-btn {
     width: fit-content;
     text-decoration: none;
-    color: #2F4137;
+    /* color: #2F4137; */
     font-weight: 600;
     padding: 6px 20px;
     letter-spacing: 1.2px;
     border-radius: 0px;
-    border: 2px solid #2F4137;
+    /* border: 2px solid #2F4137; */
     margin-top: 25px;
     display: block;
     font-size: 15px;
@@ -1220,11 +1244,12 @@ a.overview-btn {
     margin: 20px;
     padding: 10px;
     text-align: center;
-    border: 4px solid #2F41374a;
+    border: 2px solid #2F41374a;
     border-radius: 10px;
-    background: #e0dccf40;
+    background: white;
 }
 .price-content {
+    margin-top: 20px;
     .pricing {
         padding: 15px 0 5px;
     }
@@ -1260,11 +1285,11 @@ section.location-advantages {
     .price-query-btn a {
         text-decoration: none;
         color: #ffffff;
-        border: 1px solid #2F4137;
+        border: 1px solid #b62127;
         padding: 7px 40px;
         display: inline-block;
-        background: #2F4137;
-        outline: 1px solid #2F4137;
+        background: #b62127;
+        /* outline: 1px solid #b62127; */
         outline-offset: 2px;
         margin: 6px 0;
         border-radius: 5px;
@@ -1340,9 +1365,15 @@ section.location-advantages {
 }
 
 /* ////////////////////////////////////////////////////////////////// */
-.modal-dialog .modal-content {
-    border-radius: 0px;
-    background: #2F4137;
+#gallery .modal-dialog .modal-content {
+    border-radius: unset;
+    border: unset;
+    background: transparent;
+}
+
+.modal-dialog img{
+    height: 400px;
+    object-fit: contain;
 }
 .footer-form.popup-form {
     margin: 0 0px;
@@ -1408,19 +1439,10 @@ section.location-advantages {
         margin-top: 20px;
     }
 
-
-    .carousel-control-next {
-        right: 83%;
-        top: 88%;
-        width: 5%;
-        height: 9%;
-    }
     .carousel-control-prev {
         /* position: absolute; */
-        left: 13%;
-        top: 88%;
-        width: 3%;
-        height: 7%;
+        left: 0;
+        
     }
 
 }
@@ -1451,7 +1473,7 @@ section.location-advantages {
         color: #000;
     }
     .project-details-ban .project-loc {
-        border: 1px solid #afafaf7d;
+        border: 1px solid var(--red);
         padding: 2px 15px;
         color: #000000;
         background: #00000000;
@@ -1479,7 +1501,7 @@ section.location-advantages {
         padding: 8px 10px;
         justify-content: start;
         box-shadow: #939393 0 2px 5px -2px;
-        background: #f4f1e8;
+        background: #d4d2d1;
         border-radius: 0;
         border: none;
     }
@@ -1550,6 +1572,7 @@ section.location-advantages {
 
 .advertise{
     height: 450px;
+    display: block;
 }
 
 .overview-left-section h2 {
@@ -1678,6 +1701,16 @@ section.location-advantages {
         height: 470px;
         padding: 10px;
     }
+    
+.h_gallrey.owl-carousel .owl-nav button.owl-next,
+.h_owl_alumni.owl-carousel .owl-nav button.owl-next {
+    right: 45%;
+}
+
+.h_gallrey.owl-carousel .owl-nav button.owl-prev,
+.h_owl_alumni.owl-carousel .owl-nav button.owl-prev {
+    left: 45%;
+}
 
 }
 

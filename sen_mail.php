@@ -44,13 +44,6 @@
 	$email = validate($_POST['email'], 'email');
 	$phone = validate($_POST['phone'], 'phone');
 	$msg = validate($_POST['msg']);
-
-	// $utm_source = isset($_COOKIE['utm_source']) ? $_COOKIE['utm_source'] : 'Direct';
-	// $utm_medium = isset($_COOKIE['utm_medium']) ? $_COOKIE['utm_medium'] : 'Direct';
-	// $utm_campaign = isset($_COOKIE['utm_campaign']) ? $_COOKIE['utm_campaign'] : 'Direct';
-	// $utm_term = isset($_COOKIE['utm_term']) ? $_COOKIE['utm_term'] : 'Direct';
-	// $utm_content = isset($_COOKIE['utm_content']) ? $_COOKIE['utm_content'] : 'Direct';
-
 	
 	$utm_source =$_POST['utm_source'];
 	$utm_medium = isset($_COOKIE['utm_medium']) ? $_COOKIE['utm_medium'] : 'Direct';

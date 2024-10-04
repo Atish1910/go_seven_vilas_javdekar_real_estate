@@ -15,9 +15,7 @@
 
     <link rel="shortcut icon" href="images/img/favicon.ico" type="image/x-icon">
     <title>VJ Palladio | 3, 4 & 4XL BHK APARTMENTS | At Balewadi Central, Pune</title>
-    <meta name="description"
-        content=""
-        content="">
+    <meta name="description" content="" content="">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -32,9 +30,57 @@
     <!-- Fontawsome kit -->
     <script src="https://kit.fontawesome.com/12b03fea70.js" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+    <script>
+        function getParameterByName(name) {
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(window.location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        window.onload = function () {
+            var utmSource = getParameterByName('utm_source');
+            var utmMedium = getParameterByName('utm_medium');
+            var utmCampaign = getParameterByName('utm_campaign');
+            var utmTerm = getParameterByName('utm_term');
+            var utmContent = getParameterByName('utm_content');
+
+            if (utmSource) document.querySelector('input[name="utm_source"]').value = utmSource;
+            if (utmMedium) document.querySelector('input[name="utm_medium"]').value = utmMedium;
+            if (utmCampaign) document.querySelector('input[name="utm_campaign"]').value = utmCampaign;
+            if (utmTerm) document.querySelector('input[name="utm_term"]').value = utmTerm;
+            if (utmContent) document.querySelector('input[name="utm_content"]').value = utmContent;
+        }
+        /// END
+    </script>
+
+    
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M3CLGPTL');
+  </script>
+  <!-- End Google Tag Manager -->
+
 </head>
 
-<body class="bg-off_white">
+<body class="">
     <?php include 'header.php';?>
     <!-- navbar end ====================================================================== -->
 
@@ -65,7 +111,7 @@
             </div>
         </div>
 
-        <div class="project-details-ban">
+        <div class="project-details-ban py-5 py-md-0">
             <p class="project-loc">At Balewadi Central, Pune</p>
 
             <h1 class="animate-charcter">VJ Palladio</h1>
@@ -96,7 +142,7 @@
         </div>
 
 
-        <div class="banner-form-section">
+        <div class="banner-form-section mb-5">
             <div class="form-section">
                 <div class="banner-form">
                     <div class="form-bottom">
@@ -114,12 +160,12 @@
     <!-- card 1st section end ====================================================================== -->
 
     <section id="nir_featre" data-bs-toggle="modal" data-bs-target="#exampleModal_y"
-        class="header_all_pages advertise wow fadeInUp my-3" data-wow-delay="01s"
+        class="header_all_pages advertise wow fadeInUp" data-wow-delay="01s"
         data-bgimg="images/img/advertise/VJ-Palladio.jpg">
     </section>
 
-<!-- ============================================================================================================================     -->
-    <section class="overview-section" id="overview">
+    <!-- ============================================================================================================================     -->
+    <section class="overview-section bg-off_white py-5" id="overview">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-md-8">
@@ -136,7 +182,13 @@
                         </div>
                         <div class="col-md-6">
                             <div class="overview-mid-section">
-                                <p>When every day is a new beginning, we wish to accomplish more and live to the fullest. In doing so, all one needs is a home where one can make the most of everything. Palladio, brings you a space that is carefully crafted for every member of the family without compromising on the luxuries. From being located in one of the most happening suburbs - Wakad, to being at the hub of connectivity, Palladio is a future-ready offering. It is where you feel you have really stepped-up and elevated to the next level! Welcome to Palladio, where you live next.</p>
+                                <p>When every day is a new beginning, we wish to accomplish more and live to the
+                                    fullest. In doing so, all one needs is a home where one can make the most of
+                                    everything. Palladio, brings you a space that is carefully crafted for every member
+                                    of the family without compromising on the luxuries. From being located in one of the
+                                    most happening suburbs - Wakad, to being at the hub of connectivity, Palladio is a
+                                    future-ready offering. It is where you feel you have really stepped-up and elevated
+                                    to the next level! Welcome to Palladio, where you live next.</p>
                             </div>
 
                         </div>
@@ -147,16 +199,17 @@
                     <div class="overview-right-section position-relative text-center">
                         <img class="overview-img" src="images/img/overview/1.webp" alt="">
                         <div class="text-center">
-                            <a class="overview-btn" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Downlaod Brochure </a>
+                            <a class="overview-btn btn btn_01 " href="" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Downlaod Brochure </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-<!-- ============================================================================================================================     -->
-    <section id="nir_gallery py-5" class=" wow fadeInUp" data-wow-delay="01s">
-        <div class="container pb-5">
+    <!-- ============================================================================================================================     -->
+    <section class=" wow fadeInUp py-5" id="gallery"  data-wow-delay="01s" id="gallery">
+        <div class="container">
             <h2 class="fs-2  mb-4 text-center">Gallery</h2>
             <h6 class="fs-1 mb-4 text-center">An Unforgettable Once-in-a-Lifetime Experience</h6>
             <div class="h_gallrey owl-carousel align-items-center">
@@ -165,7 +218,8 @@
                     for ($i=1; $i < count($a); $i++) { 
                 ?>
                 <div class="mb-4 gallery_div">
-                    <img src="images/img/gallery/g<?= $a[$i]; ?>.webp" class="w-100 rounded" alt="..." data-bs-toggle="modal" data-bs-target="#exampleModal_q<?= $a[$i]; ?>">
+                    <img src="images/img/gallery/g<?= $a[$i]; ?>.webp" class="w-100 rounded" alt="..."
+                        data-bs-toggle="modal" data-bs-target="#exampleModal_q<?= $a[$i]; ?>">
                 </div>
                 <?php
                     }
@@ -177,7 +231,7 @@
             ?>
             <div class="modal fade" id="exampleModal_q<?= $i-1; ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-lg form_02">
+                <div class="modal-dialog modal-dialog-centered  form_02">
                     <div class="modal-content">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="modal-body p-0">
@@ -199,9 +253,9 @@
             ?>
         </div>
     </section>
-<!-- ============================================================================================================================     -->
+    <!-- ============================================================================================================================     -->
 
-    <section class="price-section" id="price">
+    <section class="price-section bg-off_white" id="price">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <h4 class=" mb-3">Price </h4>
@@ -212,7 +266,7 @@
                 <div class="col-md-4 mt-3">
                     <div class="price-details">
                         <div class="price-floor-plan">
-                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" alt="">
                         </div>
                         <div class="price-content">
                             <h3 class="typology">3 BHK Apartments</h3>
@@ -238,7 +292,7 @@
                 <div class="col-md-4 mt-3">
                     <div class="price-details">
                         <div class="price-floor-plan">
-                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" alt="">
                         </div>
                         <div class="price-content">
                             <h3 class="typology">4 BHK Apartments</h3>
@@ -260,7 +314,7 @@
                 <div class="col-md-4 mt-3">
                     <div class="price-details">
                         <div class="price-floor-plan">
-                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" style="filter: blur(3px);" alt="">
+                            <img class="img-fluid" src="images/img/floor-plan/3bhk.png" alt="">
                         </div>
                         <div class="price-content">
                             <h3 class="typology">4 BHK XL Apartments</h3>
@@ -284,39 +338,39 @@
             </div>
         </div>
     </section>
-<!-- ===================================================================================================================================== -->
+    <!-- ===================================================================================================================================== -->
 
 
-<section class="price-section" id="price">
-    <div class="container">
-        <div class="row justify-content-center text-center">
-            <h4 class=" mb-3">Our Amenities</h4>
-            <h2 class="mb-5">Amenities that Define Excellence</h2>
-        </div>
-        <div class="row">
+    <section class="price-section bg-white" id="amenities">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h4 class=" mb-3">Our Amenities</h4>
+                <h2 class="mb-5">Amenities that Define Excellence</h2>
+            </div>
+            <div class="row">
                 <?php 
                 $a = array('1','8','5','4','6','2','7','3');
                 $b = array( 'Infinity Pool', 'Gymnasium', 'Pool Deck', 'Senior Citizen Area', 'Walking Track', 'Yoga', 'Designer Gazebo', 'Acupressure Path');
                 for ($i=0; $i < count($a) ; $i++) { 
                 ?>
-            <div class="col-md-3 mb-3">
-                <div class="bg-off_white rounded-3 border p-3">
-                    <img src="images/img/aminities/a<?= $a[$i];?>.webp" class="img-fluid" alt="">
-                    <div class="text-center pt-3">
-                        <h6 class="fw-bold fs-5"><?= $b[$i];?></h6>
+                <div class="col-md-3 mb-3">
+                    <div class="bg-off_white rounded-3 border p-3">
+                        <img src="images/img/aminities/a<?= $a[$i];?>.webp" class="img-fluid" alt="">
+                        <div class="text-center pt-3">
+                            <h6 class="fw-bold fs-5"><?= $b[$i];?></h6>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <?php 
+                <?php 
                 }
             ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===================================================================================================================================== -->
-<!-- ===================================================================================================================================== -->
-<!-- ===================================================================================================================================== -->
+    <!-- ===================================================================================================================================== -->
+    <!-- ===================================================================================================================================== -->
+    <!-- ===================================================================================================================================== -->
 
 
 
@@ -329,45 +383,28 @@
 
     <button class="btn sil_d_gradient open_othbtn oth_modal enquir_right_btn" data-bs-toggle="modal"
         data-bs-target="#exampleModal_y">Query Now</button>
-    <div class="modal fade open_othbtn oth_modal modal_bg header_all_pages_01"+
-        id="exampleModal_y" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal fade open_othbtn oth_modal modal_bg header_all_pages_01" + id="exampleModal_y" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content position-relative">
                 <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body p-3 border">
-                <div class="row px-md-3">
-                    <div class="col-md-6 header_all_pages_03" data-bgimg="images/img/VJ-Palladio-popup.jpg">
-                        <div class="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                    <h5 class="modal-title text-center text-white" id="exampleModalLabel">VJ Palladio</h5>
-                    <p class=" pb-4 text-center text-white">At Balewadi Central, Pune</p>
+                    <h5 class="modal-title text-center" id="exampleModalLabel">VJ Palladio</h5>
+                    <p class=" pb-4 text-center">At Balewadi Central, Pune</p>
                     <?php include 'form_01.php';?>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content position-relative">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content position-relative">
                 <button type="button" class="btn-close btn_close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body p-3 border">
-                <div class="row px-md-3">
-                    <div class="col-md-6 header_all_pages_03" data-bgimg="images/img/VJ-Palladio-popup.jpg">
-                        <div class="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                    <h5 class="modal-title text-center text-white" id="exampleModalLabel">VJ Palladio</h5>
-                    <p class=" pb-4 text-center text-white">At Balewadi Central, Pune</p>
+                    <h5 class="modal-title text-center" id="exampleModalLabel">VJ Palladio</h5>
+                    <p class=" pb-4 text-center">At Balewadi Central, Pune</p>
                     <?php include 'form_01.php';?>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -380,8 +417,6 @@
         integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="assets/owl.carousel.js"></script>
     <script>
-        
-
         // for baground image
         $('[data-bgimg]').each(function () {
             $(this).css('background-image', 'url(' + $(this).data('bgimg') + ')')
